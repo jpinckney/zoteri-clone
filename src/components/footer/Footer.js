@@ -6,8 +6,8 @@ import '../../App.css'
 class Footer extends Component {
   render() {
     return (
-      <div class='infomenu'>
-        <ul> Help
+      <div className='footer_infomenu'>
+        <ul className> Help
 <hr />
           <li class='noliststyle'><Link to='/contactus'>Contact us</Link></li>
           <li class='noliststyle'><Link to='/faq'>FAQ</Link></li>

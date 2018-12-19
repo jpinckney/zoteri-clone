@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Routes from '../../routes'
+// import Routes from '../../routes'
 
 
 export default class Navbar extends Component {
@@ -34,7 +34,7 @@ export default class Navbar extends Component {
         <Link to='/howtomeasure'><button class="dropbtn">How To Measure</button></Link>
         <button class="dropbtn">Login</button>
         
-        <Routes />
+        {/* <Routes /> */}
       </div>
     )
   }

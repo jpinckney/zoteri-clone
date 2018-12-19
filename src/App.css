@@ -48,7 +48,9 @@ a {
   list-style-type: none;
 }
 
-.infomenu{
-  
+.footer_infomenu{
+  color: red;
+  background-color: lightgrey;
 }
+
 
