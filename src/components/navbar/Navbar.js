@@ -2,12 +2,15 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Routes from '../../routes'
 
+
 export default class Navbar extends Component {
 
   render() {
     return (
       <div>
-        <Link to='/'><button class='dropbtn'>Go Home</button></Link>
+        <div className='navLogo'>
+       <Link to='/'><button> <img src='https://s3-us-west-1.amazonaws.com/personalproject-devmtn/smallzoteri.png' alt='Zoteri Logo'/></button></Link>
+        </div>
         <div class="dropdown">
           <button class="dropbtn">Shop</button>
           <div class="dropdown-content">

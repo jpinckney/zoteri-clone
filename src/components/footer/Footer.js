@@ -6,13 +6,21 @@ import '../../App.css'
 class Footer extends Component {
   render() {
     return (
-      <div>
+      <div class='infomenu'>
         <ul> Help
 <hr />
-          <li><Link to='/contactus'>Contact us</Link></li>
-          <li><Link to='/faq'>FAQ</Link></li>
-          <li><Link to='/termsofservice'>Terms of Service</Link></li>
-          <li><Link to='/privacy'>Privacy</Link></li>
+          <li class='noliststyle'><Link to='/contactus'>Contact us</Link></li>
+          <li class='noliststyle'><Link to='/faq'>FAQ</Link></li>
+          <li class='noliststyle'><Link to='/termsofservice'>Terms of Service</Link></li>
+          <li class='noliststyle'><Link to='/privacy'>Privacy</Link></li>
+        </ul>
+        <ul> Shop
+          <li class='noliststyle'><Link to='/products/suits'>Suits</Link></li>
+          <li class='noliststyle'><Link to='/products/jackets'>Jackets</Link></li>
+          <li class='noliststyle'><Link to='/products/pants'>Pants</Link></li>
+          <li class='noliststyle'><Link to='/products/vests'>Vests</Link></li>
+          <li class='noliststyle'><Link to='/products/shirts'>Shirts</Link></li>
+          <li class='noliststyle'><Link to='/products/shoes'>Shoes</Link></li>
         </ul>
       </div>
     );

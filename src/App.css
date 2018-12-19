@@ -39,13 +39,16 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+/*Removes the underline for anything wrapped in a <Link></Link>*/
 a {
   text-decoration: none;
 }
-
-li {
+/*Removes the bullet points from the info menu <li></li> */
+.noliststyle {
   list-style-type: none;
 }
 
+.infomenu{
+  
+}
 
