@@ -14,6 +14,7 @@ import ContactUs from './components/infomenu/ContactUs'
 import FAQ from './components/infomenu/FAQ'
 import TermsOfService from './components/infomenu/TermsOfService'
 import Privacy from './components/infomenu/Privacy'
+import Login from './components/customerLogin/Login'
 
 
 
@@ -32,6 +33,7 @@ export default function Routes(){
         <Route path='/aboutZ' component={ AboutZ } />
         <Route path='/whyZ' component={ WhyZ } />
         <Route path='/howtomeasure' component={ HowToMeasure } />
+        <Route path='/login' component={ Login } />
         <Route path='/contactus' component={ ContactUs } />
         <Route path='/faq' component={ FAQ } />
         <Route path='/termsofservice' component={ TermsOfService } />

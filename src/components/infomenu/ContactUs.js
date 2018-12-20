@@ -8,7 +8,7 @@ export default class ContactUs extends Component {
 
       <h2>Feel free to contact us anytime, we are happy to assist!</h2>
 
-      <h3><a href=''>Book an appointment</a></h3>
+      <h3><a href='/'>Book an appointment</a></h3>
 
       <h3>Our Information</h3>
       <ul>

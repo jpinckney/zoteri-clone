@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 // import Routes from '../../routes'
+import picfornow from '../../smallzoteri.png'
 
 
 export default class Navbar extends Component {
@@ -9,11 +10,11 @@ export default class Navbar extends Component {
     return (
       <div>
         <div className='navLogo'>
-       <Link to='/'><button> <img src='https://s3-us-west-1.amazonaws.com/personalproject-devmtn/smallzoteri.png' alt='Zoteri Logo'/></button></Link>
+    <Link to='/'><img src={picfornow} alt="zoteri logo"/></Link>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Shop</button>
-          <div class="dropdown-content">
+        <div className="dropdown">
+          <button className="dropbtn">Shop</button>
+          <div className="dropdown-content">
             <Link to='/products/suits'>Suits</Link>
             <Link to='/products/jackets'>Jackets</Link>
             <Link to='/products/pants'>Pants</Link>
@@ -23,18 +24,18 @@ export default class Navbar extends Component {
           </div>
         </div>
 
-        <div class="dropdown">
-          <button class="dropbtn">About</button>
-          <div class="dropdown-content">
+        <div className="dropdown">
+          <button className="dropbtn">About</button>
+          <div className="dropdown-content">
             <Link to='/aboutZ'>About Zoteri</Link>
             <Link to='/whyZ'>Why Zoteri</Link>
           </div>
         </div>
 
-        <Link to='/howtomeasure'><button class="dropbtn">How To Measure</button></Link>
-        <button class="dropbtn">Login</button>
+        <Link to='/howtomeasure'><button className="dropbtn">How To Measure</button></Link>
         
-        {/* <Routes /> */}
+        <Link to='/login'><button className="dropbtn">Login</button></Link>
+        
       </div>
     )
   }

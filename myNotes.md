@@ -2,6 +2,8 @@
 /***ROUTING***/
 /**************/
 
+ROUTING - npm i react-router-dom / npm i react-router
+
 react-router: comprises of the core routing components.
 react-router-dom: comprises of the routing API required for browsers.
 react-router-native: comprises of routing API for mobile applications.
@@ -16,6 +18,8 @@ my routes.js was originally a export default() which allowed me to use escaping 
 /***SERVER***/
 /*************/
 
+EXPRESS - npm i express
+
 the three essential pieces of code needed to run the server is: 
 1. const express = require('express') -- this is grabbing the main Express module that i installed (npm i express)
 2. const app = express() -- since the express module is a function we can invoke it to create our app variable.
@@ -29,7 +33,7 @@ require('dotenv').config() - this allows me to use the .env in my project which 
 /***AUTHENTICATION***/
 /*********************/
 
-BCRYPT
+BCRYPT - npm i bcyrptjs
 
 BCRYPT - Is a package that is installed for user security purposes. It hashes their passwords to become essentially impossible to break down into the original password. 
 
@@ -51,3 +55,12 @@ compareSync - will take the users hashed password upon login and compare it agai
 javascript runs code syncrously which means one line at a time. to handle this we use promises with .then() or async & await.
 async & await are used to tell your code to freeze at a certain point. when trying to locate a user for a login we need to use await to give the internet sometime to find the user. otherwise the code will keep running and assume that nothing was ever found.
 
+
+/****************/
+/***Login.js***/
+/***************/
+
+/******************************/
+/***Displaying Images***/
+/***With a route to go home***/
+/******************************/
