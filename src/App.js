@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import Routes from './routes'
-import Shop from './components/shop/Shop'
 class App extends Component {
   render() {
     return (

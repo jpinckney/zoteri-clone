@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+// import '../../App.css'
 
 export default class Shop extends Component {
   constructor(props) {
@@ -11,6 +12,8 @@ export default class Shop extends Component {
 
 
   componentDidMount() {
+    console.log(this.props);
+
     let { category } = this.props.match.params
     axios.get(`/display?category=${category}`).then(results => {
       this.setState({ products: results.data })
@@ -20,7 +23,7 @@ export default class Shop extends Component {
   componentDidUpdate(prevProps) {
     let { category } = this.props.match.params
     if (category !== prevProps.match.params.category) {
-      console.log('fired')
+      console.log(category)
       axios.get(`/display?category=${category}`).then(results => {
         this.setState({ products: results.data })
         console.log(results.data)
@@ -28,14 +31,24 @@ export default class Shop extends Component {
     }
   }
 
-
-
   render() {
-    // const {products} = this.state
+    const { products } = this.state
+    const mappedProducts = products.map(products => {
+
+      return (
+        <div className='description'>
+          <img src={products.image_url}/>
+          <h3>{ products.name }</h3>
+          <h4>${ products.price }</h4>
+          { products.product_info }
+        </div>
+      )
+    })
 
     return (
-      <div>
-        { this.props.match.params.category }
+      <div  >
+        { mappedProducts }
+
       </div>
     )
   }

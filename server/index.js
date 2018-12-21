@@ -16,22 +16,6 @@ app.use(session({
   saveUninitialized: true
 }))
 
-/**
- * FOR DEVELOPMENT PURPOSES ONLY
- * allows me to stay logged in to different components that require me to be logged in
- */
-
-/**app.use(async function authBypass(req, res, next) {
- if (DEV === 'true') {
-   let db = req.app.get('db')
-   let user = await db.session_user()
-   req.session.user = user[ 0 ]
-   next()
- } else {
-   next()
- }
-}) */
-
 /** Database Connection */
 
 massive(CONNECTION_STRING).then(db => {
@@ -94,7 +78,7 @@ app.get('/logout', (req, res) => {
   res.redirect('http://localhost:3000')
 })
 
-app.get('/display?', (req, res) => {
+app.get('/display', (req, res) => {
   console.log(req.query);
   const db = req.app.get('db')
   db.find_product_by_category(req.query.category).then(response => {

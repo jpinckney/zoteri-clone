@@ -15,12 +15,13 @@ class Footer extends Component {
           <li className='noliststyle'><Link to='/privacy'>Privacy</Link></li>
         </ul>
         <ul> Shop
-          <li className='noliststyle'><Link to='/products/suits'>Suits</Link></li>
-          <li className='noliststyle'><Link to='/products/jackets'>Jackets</Link></li>
-          <li className='noliststyle'><Link to='/products/pants'>Pants</Link></li>
-          <li className='noliststyle'><Link to='/products/vests'>Vests</Link></li>
-          <li className='noliststyle'><Link to='/products/shirts'>Shirts</Link></li>
-          <li className='noliststyle'><Link to='/products/shoes'>Shoes</Link></li>
+          <li className='noliststyle'><Link to='/shop/suits'>Suits</Link></li>
+          <li className='noliststyle'><Link to='/shop/jackets'>Jackets</Link></li>
+          <li className='noliststyle'><Link to='/shop/pants'>Pants</Link></li>
+          <li className='noliststyle'><Link to='/shop/vests'>Vests</Link></li>
+          <li className='noliststyle'><Link to='/shop/shirts'>Shirts</Link></li>
+          <li className='noliststyle'><Link to='/shop/shoes'>Shoes</Link></li>
+          <li className='noliststyle'><Link to='/shop/fabrics'>Fabrics</Link></li>
         </ul>
       </div>
     );

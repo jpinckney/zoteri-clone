@@ -95,3 +95,10 @@ This is used to query components for their key/value pairs. Because of the query
  componentDidMount - 
  
  componentDidUpdate - placing the query string parameter in this method is the method that allows me to dynamically request information about the products from my database.
+
+
+/********************************/
+/***Render Images to the Dom***/
+/*******************************/
+
+The code that all together that made this work was the componentDidMount as well as the componentDidUpdate. These two alone made it possible for me to dynamically select the information i want to see from the database. ***** In order to actually bring that information to render in the dom for the user to see is to map over the information. In this case we are pulling products off state and assigning it to the mappedProducts variable. In the return statement of the .map() we are pulling info from those columns and displaying it on the page that i select on according to the product. And finally the return statement in the render method, {mappedProducts} is taking the info from what i want to be displayed from the .map() return and redering it to the dom.  

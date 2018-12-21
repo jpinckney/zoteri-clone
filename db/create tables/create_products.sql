@@ -3,5 +3,6 @@ id SERIAL PRIMARY KEY,
 name text,
 price int,
 product_info text,
-image_url text
+image_url text,
+category text
 )
