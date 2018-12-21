@@ -28,7 +28,7 @@ export default class Login extends Component {
     this.setState({ email: '', password: '' })
     if (res.data.Loggedin) {
       console.log(res.data)
-      this.props.history.push('/private')
+      this.props.history.push('/')
     }
   }
 

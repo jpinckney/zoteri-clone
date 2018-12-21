@@ -14,6 +14,8 @@ index.js -- i wrapped <App /> with <Router> which is defined on line 6 because i
 
 my routes.js was originally a export default() which allowed me to use escaping {routes} jsx. this matters because if i wanted my routes to keep track of anything via state. I would need to have routes.js be a class component that can keep track. Using routes then becomes <Routes />
 
+after my third commit i discovered a neat trick called routing params and the match object. I originally had a folder with a component for each drop down option (6 of them). I deleted all of those drop down routes frome routes.js and replaced it with one route component to Shop.js. The route is '/shop/:category'. the /:(name of routing param here) is called the routing parameter which makes my application dynamic, i can now delete all of those other useless components. The match object located in Shop.js {this.props.match.params.category} is simply matching the routes with the drop down options that i originally had. Clicking on the drop down options still routes me to the proper place. 
+
 /**************/
 /***SERVER***/
 /*************/
@@ -60,7 +62,36 @@ async & await are used to tell your code to freeze at a certain point. when tryi
 /***Login.js***/
 /***************/
 
+async login(){} - This Function is simply referencing the post endpoint in index.js. After the endpoint location it takes in email, password. then it sets the new state to = '' which if logged in will remove the users info from the input boxes and automatically push them back to the main page. the reason why we have await keyword is because we want to make sure that the internet has a moment to process the information before it sets state. 
+
+async createAccount(){} - This is essentially doing the same thing as the above function.
+
 /******************************/
 /***Displaying Images***/
 /***With a route to go home***/
 /******************************/
+
+in navbar.js i was having some serious issues trying to display an image. What i was missing is that you need to import the image. Give it an alias name. import aliasName from 'url address' or if the image is saved locally in the project i will need to find it by doing '../../nameOfImage' ect... however keep in mind that it wont auto complete via some extensions i have. so i will have to find it myself and trust that it works. after that of course i need to do an <img src=> the difference this time from regular html is i need to escape JSX. <img src{aliasName}>
+
+/*************/
+/***AXIOS***/
+/************/
+
+Axios - npm i axios
+
+Axios - In short this is a http request to our endpoints that have some sort of functionality. 
+
+/******************************/
+/***Query String Parameter***/
+/*****************************/
+
+This is used to query components for their key/value pairs. Because of the query string it allows me to request dynamic information from my database. we set the variable category = to this.props.match.params 
+
+/***********************************/
+/***Component Lifecycle Methods***/
+/**********************************/
+ https://reactjs.org/docs/react-component.html#the-component-lifecycle
+
+ componentDidMount - 
+ 
+ componentDidUpdate - placing the query string parameter in this method is the method that allows me to dynamically request information about the products from my database.

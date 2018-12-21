@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-// import Routes from '../../routes'
 import picfornow from '../../smallzoteri.png'
 
 
@@ -15,12 +14,13 @@ export default class Navbar extends Component {
         <div className="dropdown">
           <button className="dropbtn">Shop</button>
           <div className="dropdown-content">
-            <Link to='/products/suits'>Suits</Link>
-            <Link to='/products/jackets'>Jackets</Link>
-            <Link to='/products/pants'>Pants</Link>
-            <Link to='/products/vests'>Vests</Link>
-            <Link to='/products/shirts'>Shirts</Link>
-            <Link to='/products/shoes'>Shoes</Link>
+            <Link to='/shop/suits'>Suits</Link>
+            <Link to='/shop/jackets'>Jackets</Link>
+            <Link to='/shop/pants'>Pants</Link>
+            <Link to='/shop/vests'>Vests</Link>
+            <Link to='/shop/shirts'>Shirts</Link>
+            <Link to='/shop/shoes'>Shoes</Link>
+            <Link to='/shop/fabrics'>Fabrics</Link>
           </div>
         </div>
 
